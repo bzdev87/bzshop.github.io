@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Pilihan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>📋 Pilihan UI</h1>
+        <a href="index.html" class="btn">🏠 Kembali</a>
+    </nav>
+    <section id="menu-options">
+        <h2>Pilih Tampilan UI</h2>
+        <select id="uiSelect" onchange="changeUI()">
+            <option value="simple">Sederhana</option>
+            <option value="modern">Modern</option>
+            <option value="futuristic">Futuristik</option>
+        </select>
+    </section>
+</body>
+<script>
+function changeUI() {
+    const style = document.getElementById("uiSelect").value;
+    alert("UI berubah ke: " + style);
+}
+</script>
+</html>

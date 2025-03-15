@@ -1,0 +1,1 @@
+function openSettings() { alert("Pengaturan akan segera hadir!"); }
